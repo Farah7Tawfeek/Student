@@ -9,18 +9,19 @@ public class Student {
     private int age;
     private int gender;// 1 female 2 male
     private String city;
-
+    private int marks;
 
     public Student( ) {
 
     }
 
-    public Student(int id,String name ,int age , int gender,String city ) {
+    public Student(int id, String name, int age, int gender, String city, int marks) {
         this.id = id;
         this.name = name;
         this.age = age;
         this.gender = gender;
         this.city = city;
+        this.marks = marks;
     }
 
     public int getId() {
@@ -68,5 +69,13 @@ public class Student {
     public String toString() {
         return id+" - "+name+"-"+gender+" - "+age+" - "+city;
 
+    }
+
+    public int getMarks() {
+        return marks;
+    }
+
+    public void setMarks(int marks) {
+        this.marks = marks;
     }
 }
